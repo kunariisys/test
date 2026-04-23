@@ -20,7 +20,7 @@ end
 
 game.Players.LocalPlayer.OnTeleport:Connect(function()
 
-    queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/unicornnmann/Magical-Experience/refs/heads/main/The%20Magical%20Unicorn'))()")
+    queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/kunariisys/test/refs/heads/main/test.luau'))()")
 end)
 
 -- Create the ScreenGui
