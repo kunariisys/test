@@ -18,10 +18,13 @@ if setclipboard then
     setclipboard("https://discord.gg/wBvQumC4") -- change text to whatever you want
 end
 
-game.Players.LocalPlayer.OnTeleport:Connect(function()
+if queue_on_teleport then
+	game.Players.LocalPlayer.OnTeleport:Connect(function()
+		task.wait(2)
+	    queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/kunariisys/test/refs/heads/main/test.luau'))()")
+	end)
+end
 
-    queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/kunariisys/test/refs/heads/main/test.luau'))()")
-end)
 
 -- Create the ScreenGui
 local screenGui = Instance.new("ScreenGui")
