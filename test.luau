@@ -1,4 +1,4 @@
-game.Loaded:Wait()
+task.wait(2)
 game.Players.LocalPlayer.OnTeleport:Connect(function()
 	queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/kunariisys/test/refs/heads/main/test.luau'))()")
 end)
